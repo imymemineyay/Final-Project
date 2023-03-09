@@ -1,0 +1,17 @@
+body{
+    background-image: url(http://mkdm.letsbro.com/wp-content/uploads/2016/07/it-bg01-1.jpg?id=1874) !important;
+  }
+  
+  body svg{
+    display:block;
+    margin:0 auto;
+    width:300px;
+  }
+  body #megaphone{
+    opacity:1;
+  }
+  body .cls-1{
+    fill:none;
+    stroke:#39a7da;
+    opacity:0;
+  }

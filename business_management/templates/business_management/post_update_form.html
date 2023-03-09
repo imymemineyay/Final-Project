@@ -1,0 +1,37 @@
+{% extends 'business_management/base.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <a href="{% url 'business_management:postdetail' post.id %}"> &#8592; Back</a>
+</div>
+
+
+<div class="card-body">
+    <h1> Edit Post </h1>
+    <hr/>
+    <form method = "POST" enctype = "multipart/form-data"> {% csrf_token %}
+        <table>
+            {{ form }}
+        </table><hr>
+        <button type = "submit" style=" border: 1px solid #3d2da7; border-radius: 5px;
+            width: 10%; height:20% ; "> Submit </button>
+        <button type = "submit" style=" border: 1px solid #3d2da7; border-radius: 5px;
+            width: 10%; height:20% ; " > <a href = "{% url 'business_management:postdelete' post.id %}">Delete </a></button>
+    </form>
+</div>
+
+{% endblock content %}
+
+
+<!--
+{% block main_area %}
+<h1> Edit Post </h1>
+<hr/>
+<form method = "post" enctype="multipart/form-data"> {% csrf_token %}
+    <table>
+        {{form}}
+
+    </table>
+    <button type = "submit" class = "btn btn-primary float-right"> Submit </button>
+</form>
+{% endblock %} -->

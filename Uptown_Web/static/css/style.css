@@ -1,0 +1,103 @@
+.moto {
+    text-align: left;
+    padding:50px;
+    font-size: 24px;
+}
+
+.profile {
+    font-size: 17px;
+}
+
+/* inquiry */
+aside {
+    background: #1f8dd6; /* same color as selected state on site menu */
+    padding: 0.3em 1em;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 2em;
+}
+
+textarea {
+  width: 100%;
+}
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+.is-center {
+  text-align: center;
+}
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(28, 184, 65); /* this is a green */
+}
+.button-xlarge {
+  font-size: 125%;
+}
+button {
+  float: right;
+}
+#name, #email {
+  width: 50%;
+}
+.honeypot-field {
+  display: none;
+}
+
+/* To-Do List */
+
+.task-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top : 1px solid rgb(226, 226, 226);
+  overflow: hidden;
+  padding : 10px
+  
+}
+
+.task-title {
+  display: flex;
+}
+
+.task-title a {
+  text-decoration: none;
+  color : #4b5156;
+  margin-left: 10px;
+}
+
+.task-complete-icon1 {
+  height : 20px;
+  width : 20px;
+  background-color: rgb(242, 183, 183);
+  border-radius: 50%;
+}
+
+.task-complete-icon2 {
+  height : 20px;
+  width : 20px;
+  background-color: rgb(181, 184, 240);
+  border-radius: 50%;
+}
+
+
+.task-incomplete-icon {
+  height : 20px;
+  width : 20px;
+  background-color: rgb(218,218,218);
+  border-radius: 50%;
+}
+
+.delete-link {
+  text-decoration: none;
+  font-weight: 900;
+  color: #cf4949;
+  font-size: 22px;
+  line-height: 0;
+}
+
+

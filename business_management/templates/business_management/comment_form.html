@@ -1,0 +1,27 @@
+{% extends 'business_management/base.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <a href="{% url 'business_management:postdetail' post_id %}"> &#8592; Back</a>
+</div>
+
+
+<div class="card-body">
+    <h1> Edit Comment - Post </h1>
+    <hr/>
+    <form method = "POST" id ="comment-form"> 
+        {% csrf_token %}
+        <table>
+            {{ form }}
+        </table><hr>
+        <button type = "submit" style=" border: 1px solid #3d2da7; border-radius: 5px;
+            width: 10%; height:20% ; "> Submit </button>
+    </form>
+</div>
+
+{% endblock content %}
+
+
+
+
+
